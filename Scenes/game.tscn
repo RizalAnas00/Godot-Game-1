@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b88bl3n5y7126" path="res://Scenes/player.tscn" id="1_7yj8n"]
 [ext_resource type="Texture2D" uid="uid://de4la80d1biq3" path="res://Assets/sprites/world_tileset.png" id="1_l6u11"]
 [ext_resource type="PackedScene" uid="uid://cigm877hrlfj3" path="res://Scenes/platform.tscn" id="3_k3dt5"]
-[ext_resource type="PackedScene" uid="uid://clwaojaom25bw" path="res://Scenes/coin.tscn" id="4_88umh"]
+[ext_resource type="PackedScene" uid="uid://dxikn1tl404dn" path="res://Scenes/coin.tscn" id="4_88umh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xi2ha"]
 texture = ExtResource("1_l6u11")
@@ -263,6 +263,7 @@ layer_0/tile_data = PackedInt32Array(131071, 0, 0, 65536, 0, 0, 262139, 0, 0, 26
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(4, 4)
+limit_bottom = 135
 
 [node name="Platform" parent="." instance=ExtResource("3_k3dt5")]
 position = Vector2(24, -18)
@@ -285,40 +286,43 @@ autoplay = "move"
 speed_scale = 0.8
 
 [node name="coin" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(44, 32)
-
-[node name="coin13" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(286, -63)
-
-[node name="coin3" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(141, 32)
-
-[node name="coin4" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(154, 32)
-
-[node name="coin5" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(183, -55)
-
-[node name="coin6" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(391, 10)
-
-[node name="coin7" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(403, 74)
-
-[node name="coin8" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(296, 98)
-
-[node name="coin9" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(264, 47)
+position = Vector2(23, -42)
 
 [node name="coin2" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(8, -58)
+position = Vector2(-56, 26)
+
+[node name="coin4" parent="." instance=ExtResource("4_88umh")]
+position = Vector2(281, 66)
+
+[node name="coin6" parent="." instance=ExtResource("4_88umh")]
+position = Vector2(544, 5)
+
+[node name="coin5" parent="." instance=ExtResource("4_88umh")]
+position = Vector2(406, 69)
+
+[node name="coin7" parent="." instance=ExtResource("4_88umh")]
+position = Vector2(-95, 27)
+
+[node name="coin8" parent="." instance=ExtResource("4_88umh")]
+position = Vector2(-130, -51)
+
+[node name="coin9" parent="." instance=ExtResource("4_88umh")]
+position = Vector2(-49, -63)
 
 [node name="coin10" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(-93, 11)
-
-[node name="coin12" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(-72, -57)
+position = Vector2(103, -93)
 
 [node name="coin11" parent="." instance=ExtResource("4_88umh")]
-position = Vector2(-108, 11)
+position = Vector2(200, -37)
+
+[node name="coin12" parent="." instance=ExtResource("4_88umh")]
+position = Vector2(41, 37)
+
+[node name="coin13" parent="." instance=ExtResource("4_88umh")]
+position = Vector2(140, 29)
+
+[node name="coin14" parent="." instance=ExtResource("4_88umh")]
+position = Vector2(153, 29)
+
+[node name="coin3" parent="." instance=ExtResource("4_88umh")]
+position = Vector2(287, -58)
