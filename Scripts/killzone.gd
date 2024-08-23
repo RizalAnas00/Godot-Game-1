@@ -8,7 +8,6 @@ func _on_body_entered(body):
 	body.get_node("CollisionShape2D").queue_free()
 	body.get_node("AnimatedSprite2D").flip_v = true
 	#body.rotate(180)
-	body.move(-200)
 	timer.start()
 
 
