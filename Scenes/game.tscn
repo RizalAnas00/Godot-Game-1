@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://py2xk034s74y"]
+[gd_scene load_steps=23 format=3 uid="uid://py2xk034s74y"]
 
 [ext_resource type="PackedScene" uid="uid://b88bl3n5y7126" path="res://Scenes/player.tscn" id="1_7yj8n"]
 [ext_resource type="Texture2D" uid="uid://de4la80d1biq3" path="res://Assets/sprites/world_tileset.png" id="1_l6u11"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dxikn1tl404dn" path="res://Scenes/coin.tscn" id="4_88umh"]
 [ext_resource type="PackedScene" uid="uid://b1xdvsmdxcr4c" path="res://Scenes/killzone.tscn" id="5_ijebb"]
 [ext_resource type="PackedScene" uid="uid://c3ssxuloxa0kc" path="res://Scenes/slime.tscn" id="6_rvk0q"]
+[ext_resource type="FontFile" uid="uid://c0wpfmaj7hsu3" path="res://Assets/fonts/PixelOperator8.ttf" id="7_2rjft"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xi2ha"]
 texture = ExtResource("1_l6u11")
@@ -511,3 +512,65 @@ shape = SubResource("WorldBoundaryShape2D_fk7gx")
 
 [node name="slime" parent="." instance=ExtResource("6_rvk0q")]
 position = Vector2(24, 36)
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = -42.0
+offset_top = 4.0
+offset_right = 44.0
+offset_bottom = 14.0
+theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 0.670588)
+theme_override_fonts/font = ExtResource("7_2rjft")
+theme_override_font_sizes/font_size = 8
+text = "Space to jump"
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = 286.0
+offset_top = 85.0
+offset_right = 372.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 0.686275)
+theme_override_fonts/font = ExtResource("7_2rjft")
+theme_override_font_sizes/font_size = 8
+text = "Dont Fall!"
+
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = 199.0
+offset_top = 23.0
+offset_right = 283.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 0.517647)
+theme_override_fonts/font = ExtResource("7_2rjft")
+theme_override_font_sizes/font_size = 8
+text = "Be carefull..."
+
+[node name="Label4" type="Label" parent="Labels"]
+offset_left = 577.0
+offset_top = -2.0
+offset_right = 676.0
+offset_bottom = 8.0
+theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 0.517647)
+theme_override_fonts/font = ExtResource("7_2rjft")
+theme_override_font_sizes/font_size = 8
+text = "Its gonna be fun"
+
+[node name="Label5" type="Label" parent="Labels"]
+offset_left = 1244.0
+offset_top = 20.0
+offset_right = 1343.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 0.517647)
+theme_override_fonts/font = ExtResource("7_2rjft")
+theme_override_font_sizes/font_size = 8
+text = "You're here!!"
+
+[node name="Label6" type="Label" parent="Labels"]
+offset_left = 936.0
+offset_top = -98.0
+offset_right = 1035.0
+offset_bottom = -90.0
+theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 0.517647)
+theme_override_fonts/font = ExtResource("7_2rjft")
+theme_override_font_sizes/font_size = 8
+text = "Keep it going..."
