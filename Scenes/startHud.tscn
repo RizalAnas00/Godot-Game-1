@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn2lhqq2mp7ni"]
+
+[ext_resource type="FontFile" uid="uid://cxng1dhprg88m" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="1_ibakg"]
+[ext_resource type="Script" path="res://Scripts/HUD/start_hud.gd" id="1_rfnnj"]
+
+[sub_resource type="Shortcut" id="Shortcut_j0rye"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_rfnnj")
+
+[node name="startButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.479
+anchor_top = 0.454
+anchor_right = 0.479
+anchor_bottom = 0.454
+offset_left = -119.808
+offset_top = -38.192
+offset_right = 119.191
+offset_bottom = 38.808
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("1_ibakg")
+theme_override_font_sizes/font_size = 32
+shortcut = SubResource("Shortcut_j0rye")
+text = "START"
+text_overrun_behavior = 4
+autowrap_mode = 2
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="startButton" to="." method="_on_start_button_pressed"]

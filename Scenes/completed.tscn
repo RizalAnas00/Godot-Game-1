@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7pdvggtkh8te"]
+
+[ext_resource type="Script" path="res://Scripts/HUD/completed.gd" id="1_w5y16"]
+[ext_resource type="FontFile" uid="uid://c0wpfmaj7hsu3" path="res://Assets/fonts/PixelOperator8.ttf" id="2_i8cfo"]
+
+[node name="Completed" type="CanvasLayer"]
+script = ExtResource("1_w5y16")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = -1
+anchor_right = 1.062
+anchor_bottom = 0.988
+offset_left = -64.0
+offset_top = -32.0
+offset_right = 32.5759
+offset_bottom = 31.776
+color = Color(1, 1, 1, 0.105882)
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.521
+anchor_top = 0.5
+anchor_right = 0.521
+anchor_bottom = 0.5
+offset_left = -120.192
+offset_top = 84.0
+offset_right = 135.808
+offset_bottom = 173.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8cfo")
+theme_override_font_sizes/font_size = 16
+text = "Next Level ? 
+
+Letss Go...."
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

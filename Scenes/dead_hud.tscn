@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://dev6ngnhwrwuh"]
+
+[ext_resource type="Script" path="res://Scripts/HUD/dead_hud.gd" id="1_ljfes"]
+[ext_resource type="FontFile" uid="uid://cxng1dhprg88m" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="1_tvx4y"]
+[ext_resource type="FontFile" uid="uid://c0wpfmaj7hsu3" path="res://Assets/fonts/PixelOperator8.ttf" id="2_82ktx"]
+
+[node name="dead_hud" type="CanvasLayer"]
+script = ExtResource("1_ljfes")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.481
+anchor_right = 0.5
+anchor_bottom = 0.481
+offset_left = -624.0
+offset_top = -351.688
+offset_right = 664.0
+offset_bottom = 392.312
+color = Color(0, 0, 0, 0.313726)
+
+[node name="quitButton" type="Button" parent="."]
+offset_left = 352.0
+offset_top = 312.0
+offset_right = 536.0
+offset_bottom = 384.0
+theme_override_fonts/font = ExtResource("1_tvx4y")
+theme_override_font_sizes/font_size = 16
+text = "Quit"
+
+[node name="restartButton" type="Button" parent="."]
+offset_left = 600.0
+offset_top = 312.0
+offset_right = 776.0
+offset_bottom = 384.0
+theme_override_fonts/font = ExtResource("1_tvx4y")
+theme_override_font_sizes/font_size = 16
+text = "Restart"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 384.0
+offset_top = 208.0
+offset_right = 768.0
+offset_bottom = 240.0
+theme_override_fonts/font = ExtResource("2_82ktx")
+theme_override_font_sizes/font_size = 32
+text = "Restart ? Or...."
+
+[connection signal="pressed" from="quitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="restartButton" to="." method="_on_restart_button_pressed"]
