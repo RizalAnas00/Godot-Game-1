@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://be5wuwsj4swxi"]
+
+[ext_resource type="Texture2D" uid="uid://de4la80d1biq3" path="res://Assets/sprites/world_tileset.png" id="1_rmqo3"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_blo1y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w3vny"]
+size = Vector2(70, 68)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_p3hhm"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_blo1y")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(5, 5)
+texture = ExtResource("1_rmqo3")
+region_enabled = true
+region_rect = Rect2(0, 32, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_w3vny")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_p3hhm")
