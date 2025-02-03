@@ -13,10 +13,10 @@ anchor_left = 0.5
 anchor_top = 0.481
 anchor_right = 0.5
 anchor_bottom = 0.481
-offset_left = -624.0
-offset_top = -351.688
-offset_right = 664.0
-offset_bottom = 392.312
+offset_left = -1040.0
+offset_top = -442.32
+offset_right = 1008.0
+offset_bottom = 485.68
 color = Color(0, 0, 0, 0.313726)
 
 [node name="quitButton" type="Button" parent="."]

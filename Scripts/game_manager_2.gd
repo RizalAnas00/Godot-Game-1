@@ -8,14 +8,19 @@ var finish = false
 var pos_platform
 var pos_player
 var player_spawn
+
 var camera: Camera2D
 var animate_camera
+
+var live_score: Label
+var score_spawn
 
 var first_pos
 #signal can_double_jump
 
 @onready var coins: Node = $"../Coins"
 @onready var score_label: Label = $ScoreLabel
+@onready var slime_2: Node2D = $"../slime2"
 
 func _ready():
 	total_coins = coins.get_child_count()
@@ -38,6 +43,18 @@ func _ready():
 	camera = Camera2D.new()
 	player_spawn.add_child(camera)
 
+	#live_score = Label.new()
+	#live_score.set_custom_minimum_size(Vector2(200, 30))
+	#live_score.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	#live_score.vertical_alignment = VERTICAL_ALIGNMENT_TOP
+	#
+	## Terapkan font ke Label
+	##live_score.add_theme_font_override("font", "res://Assets/fonts/PixelOperator8-Bold.ttf": Font)
+	#
+	#add_child(live_score)
+	#
+	#live_score.text = "Score : "
+	#live_score.position = Vector2(100 , 0)	
 	# Create a Tween using create_tween()
 	var tween = create_tween()
 	
@@ -60,7 +77,7 @@ func _on_second_tween_completed():
 	camera.limit_bottom = 100 
 
 func _process(delta: float) -> void:
-	pass
+	slime_2.SPEED = 20
 
 func add_point():
 	score += 1
@@ -80,4 +97,3 @@ func add_point():
 func _on_completed_completed():
 	print("Level Completed Signal Emitted")
 	switch_lvl.emit()
-		
