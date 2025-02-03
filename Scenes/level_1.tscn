@@ -424,6 +424,45 @@ position = Vector2(-56, 26)
 [node name="coin4" parent="Coins" instance=ExtResource("6_1qppa")]
 position = Vector2(39, 35)
 
+[node name="coin3" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(90, -84)
+
+[node name="coin5" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(-100, -92)
+
+[node name="coin6" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(165, -56)
+
+[node name="coin7" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(150, 19)
+
+[node name="coin9" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(256, 59)
+
+[node name="coin10" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(367, 93)
+
+[node name="coin11" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(456, -1)
+
+[node name="coin8" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(618, 17)
+
+[node name="coin12" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(738, -47)
+
+[node name="coin13" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(738, 77)
+
+[node name="coin14" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(995, -50)
+
+[node name="coin15" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(1328, 58)
+
+[node name="coin16" parent="Coins" instance=ExtResource("6_1qppa")]
+position = Vector2(1034, 39)
+
 [node name="slime" parent="." instance=ExtResource("8_7p0o4")]
 position = Vector2(24, 36)
 
