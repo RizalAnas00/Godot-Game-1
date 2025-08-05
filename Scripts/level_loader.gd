@@ -57,7 +57,6 @@ func _on_level_completed():
 		change_level(level_number)
 	else:
 		print("No more levels to load")
-		# Bisa menambahkan logika untuk kembali ke menu utama atau menampilkan pesan akhir
 		return
 
 func change_level(level_idx: int):
@@ -85,7 +84,7 @@ func _on_start_game():
 	player_main.enable_player()
 	slime.enable_slime()
 
-	# Free ground, camera, player, and slime if you want to clean them up
+	# Free ground, camera, player, and slime
 	ground.queue_free()
 	camera_2d.queue_free()
 	player_main.queue_free()  

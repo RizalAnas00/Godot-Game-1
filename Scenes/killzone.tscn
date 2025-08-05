@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b1xdvsmdxcr4c"]
 
-[ext_resource type="Script" path="res://Scripts/killzone.gd" id="1_uet85"]
+[ext_resource type="Script" uid="uid://br8myhb8fhvk1" path="res://Scripts/killzone.gd" id="1_uet85"]
 [ext_resource type="AudioStream" uid="uid://dmtxy4gutnlug" path="res://Assets/sounds/hurt.wav" id="2_s61ah"]
 [ext_resource type="PackedScene" uid="uid://dev6ngnhwrwuh" path="res://Scenes/dead_hud.tscn" id="3_5ji3j"]
 

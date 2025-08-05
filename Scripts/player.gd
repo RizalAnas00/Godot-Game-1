@@ -5,7 +5,7 @@ extends CharacterBody2D
 
 const SPEED = 100.0
 const JUMP_VELOCITY = -300.0
-var input_enabled = true
+var input_enabled: bool = true
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 var jump_count = 1
@@ -33,10 +33,10 @@ func _process_input():
 
 	if current_level == 2:
 		if Input.is_action_just_pressed("jump") and jump_count < max_jump:
-			print("JUMP ON LEVEL 2 STATE")
+			#print("JUMP ON LEVEL 2 STATE")
 			jump()
 			jump_count += 1
-			print("Max count of jumps : ",max_jump)
+			#print("Max count of jumps : ",max_jump)
 	else:
 		#Handle jump
 		if Input.is_action_just_pressed("jump") and is_on_floor():
@@ -95,7 +95,7 @@ func idle_player():
 	if animated_sprite:
 		animated_sprite.play("idle")
 	else:
-		print("Animated sprite not found!")  # Customize for your idle animation
+		print("Animated sprite not found!")
 
 func enable_player():
 	input_enabled = true

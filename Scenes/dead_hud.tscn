@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dev6ngnhwrwuh"]
 
-[ext_resource type="Script" path="res://Scripts/HUD/dead_hud.gd" id="1_ljfes"]
+[ext_resource type="Script" uid="uid://6mir1oooktno" path="res://Scripts/HUD/dead_hud.gd" id="1_ljfes"]
 [ext_resource type="FontFile" uid="uid://cxng1dhprg88m" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="1_tvx4y"]
 [ext_resource type="FontFile" uid="uid://c0wpfmaj7hsu3" path="res://Assets/fonts/PixelOperator8.ttf" id="2_82ktx"]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=35 format=3 uid="uid://b88bl3n5y7126"]
 
 [ext_resource type="Texture2D" uid="uid://cyr3x5rdbjvma" path="res://Assets/sprites/knight.png" id="1_ahnhs"]
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_pccfm"]
+[ext_resource type="Script" uid="uid://dy21a1a62jo2f" path="res://Scripts/player.gd" id="1_pccfm"]
 [ext_resource type="AudioStream" uid="uid://dpmd6bar337j0" path="res://Assets/sounds/jump.wav" id="3_fhefy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_31nki"]
@@ -241,8 +241,10 @@ script = ExtResource("1_pccfm")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_u7w2k")
-animation = &"roll"
+animation = &"run"
 autoplay = "idle"
+frame = 10
+frame_progress = 0.573199
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)

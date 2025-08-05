@@ -46,7 +46,7 @@ func add_point():
 		player.death_and_jump()
 		
 		#change the camera zoom
-		var zooming = player.get_node("Camera2D")
+		var zooming = player.get_node("awdw2D")
 		zooming.zoom = Vector2(3,3)
 		
 		

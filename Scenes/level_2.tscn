@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=4 uid="uid://b1q6shhk2rn0d"]
 
 [ext_resource type="Texture2D" uid="uid://de4la80d1biq3" path="res://Assets/sprites/world_tileset.png" id="1_a12ii"]
-[ext_resource type="Script" path="res://Scripts/game_manager_2.gd" id="2_lrpfo"]
+[ext_resource type="Script" uid="uid://c7ly53tlw1utp" path="res://Scripts/game_manager_2.gd" id="2_lrpfo"]
 [ext_resource type="PackedScene" uid="uid://cigm877hrlfj3" path="res://Scenes/platform.tscn" id="2_nwssr"]
 [ext_resource type="PackedScene" uid="uid://b1xdvsmdxcr4c" path="res://Scenes/killzone.tscn" id="3_j56ak"]
 [ext_resource type="FontFile" uid="uid://c0wpfmaj7hsu3" path="res://Assets/fonts/PixelOperator8.ttf" id="4_ima12"]
@@ -1236,8 +1236,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_praqc"]
 _data = {
-"RESET": SubResource("Animation_3wrsl"),
-"up_down": SubResource("Animation_1ybqy")
+&"RESET": SubResource("Animation_3wrsl"),
+&"up_down": SubResource("Animation_1ybqy")
 }
 
 [sub_resource type="Animation" id="Animation_phfrq"]
@@ -1274,8 +1274,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_e4tv5"]
 _data = {
-"RESET": SubResource("Animation_phfrq"),
-"side_scroll": SubResource("Animation_3f5ah")
+&"RESET": SubResource("Animation_phfrq"),
+&"side_scroll": SubResource("Animation_3f5ah")
 }
 
 [sub_resource type="Animation" id="Animation_ek8us"]
@@ -1312,8 +1312,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_527jg"]
 _data = {
-"RESET": SubResource("Animation_ek8us"),
-"side_scroll": SubResource("Animation_8hjgg")
+&"RESET": SubResource("Animation_ek8us"),
+&"side_scroll": SubResource("Animation_8hjgg")
 }
 
 [node name="level_2" type="Node2D"]
@@ -1448,7 +1448,7 @@ position = Vector2(-265, -98)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Map/Platform"]
 libraries = {
-"": SubResource("AnimationLibrary_praqc")
+&"": SubResource("AnimationLibrary_praqc")
 }
 autoplay = "up_down"
 
@@ -1457,7 +1457,7 @@ position = Vector2(194, -219)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Map/Platform2"]
 libraries = {
-"": SubResource("AnimationLibrary_e4tv5")
+&"": SubResource("AnimationLibrary_e4tv5")
 }
 
 [node name="Platform3" parent="Map" instance=ExtResource("2_nwssr")]
@@ -1465,7 +1465,7 @@ position = Vector2(-351, 44)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Map/Platform3"]
 libraries = {
-"": SubResource("AnimationLibrary_527jg")
+&"": SubResource("AnimationLibrary_527jg")
 }
 autoplay = "side_scroll"
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dn2lhqq2mp7ni"]
 
 [ext_resource type="FontFile" uid="uid://cxng1dhprg88m" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="1_ibakg"]
-[ext_resource type="Script" path="res://Scripts/HUD/start_hud.gd" id="1_rfnnj"]
+[ext_resource type="Script" uid="uid://5udcaei1r2g2" path="res://Scripts/HUD/start_hud.gd" id="1_rfnnj"]
 
 [sub_resource type="Shortcut" id="Shortcut_j0rye"]
 
